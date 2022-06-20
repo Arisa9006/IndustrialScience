@@ -1,0 +1,6 @@
+{
+  "variants":
+  {
+    "": { "model": "industrialscience:block/test_block" }
+  }
+}

@@ -1,0 +1,21 @@
+package dev.felnull.industrialscience.normalclass.Tileentity;
+
+import net.minecraft.tileentity.ITickableTileEntity;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntityType;
+import net.minecraftforge.energy.EnergyStorage;
+
+public class QuarryTileEntity extends TileEntity implements ITickableTileEntity {
+    public QuarryTileEntity(TileEntityType<?> tileEntityTypeIn){
+        super (tileEntityTypeIn);
+
+    }
+    public QuarryTileEntity(){
+        this(TileEntityTypeInit.QUARRY_TILE_ENTITY_TYPE.get())
+    }
+    @Override
+    public void tick(){
+        this.(this.pos.down);
+    }
+
+}
